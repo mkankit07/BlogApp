@@ -1,6 +1,6 @@
 const jwt =require("jsonwebtoken")
 
-const generateToken=data=>{
+const generateToken=(data)=>{
     const token=jwt.sign({data},'secretkey')
     return token
 }
